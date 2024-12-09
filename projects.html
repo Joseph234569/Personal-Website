@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <style>
+      /* Ensures the body takes up at least the full viewport height */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      /* A flexbox layout for the body to push footer to the bottom */
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Adds space between the first paragraph and navbar */
+      .first-paragraph {
+        margin-top: 40px;
+      }
+
+      /* Puts the Footer at the bottom of the page */
+      .footer {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        padding: 10px 0;
+        background-color: #f8f9fa;
+      }
+
+      /* Adds padding at the bottom to avoid content overlap with the footer */
+      .content {
+        flex-grow: 1; /* Ensures the content area takes up remaining space */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Joseph Austin</h1>
+          </div>
+        </div>
+      </div>   
+    </header>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <div class="navbar-nav d-flex justify-content-center w-100"> <!-- Centering the navbar items -->
+            <a class="nav-link ms-3 me-3" href="index.html">Home</a> <!-- Reduced margin for closer spacing -->
+            <a class="nav-link ms-3 me-3" href="about.html">About Me</a>
+            <a class="nav-link ms-3 me-3" href="projects.html">Projects</a>
+            <a class="nav-link ms-3 me-3" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- 3-Column Table Section -->
+    <div class="container mt-5 content">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Skills gained from it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Soccer Game Using Scratch</td>
+            <td>National Louis University</td>
+            <td>I used a animation and game development program named Scratch to build a skit of a soccer game</td>
+            <td>Problem Solving, Detail-Oriented, Creativity, Storytelling.  </td>
+          </tr>
+          
+          <tr>
+            <td>Text-Based Adventure game</td>
+            <td>National Louis University</td>
+            <td>Created a Fantasy maze game using Python with a teammate.The game is about a young adult trying to find his way back home after waking up in some alternate dimension. As the player you need to find your way around the maze, avoid setting off traps, avoid making too much noise, and find resources to help navigate the maze more easily to find the portal that takes you back to your reality.</td>
+            <td>Python, Storytelling, Creativity, Problem Solving.</td>
+          </tr>
+          
+          <tr>
+            <td>Mobile App Prototyping</td>
+            <td>National Louis University</td>
+            <td>Created Low, Medium, and High-Fidelity clickable prototypes for a mobile app I designed which is a cookbok app called "World Buffet"  </td>
+            <td>Creativity, Usability and Functionality Testing, Communication.</td>
+          </tr>
+        
+          <tr>
+            <td>Personal Portfolio Website</td>
+            <td>Quake Techs Inc.</td>
+            <td>Created a personal portfolio website using HTML</td>
+            <td>HTML, Front-end development, Attention to detail, Responsive web design </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h1>Add Your Email For A Link To My Mobile App Mockup</h1>
+      <form id="emailForm">
+        <label>Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="button" onclick="performTask()">Go</button>
+      </form>
+    </div>
+
+    <script>
+      function performTask() {
+        //get the value from the email input
+        var email = document.getElementById('email').value;
+      
+        //perform a Task
+        alert('Entered Email: ' + email);
+      }
+    </script>
+    
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container">
+        <span class="text-body-secondary">Copyright &copy; 2024. All Rights Reserved.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
+  </body>
+</html>

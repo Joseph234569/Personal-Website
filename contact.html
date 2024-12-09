@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <style>
+      /* Adds space between the navbar and table */
+      main {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Joseph Austin</h1>
+          </div>
+        </div>
+      </div>   
+    </header>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <div class="navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-link ms-2 me-2" href="index.html">Home</a>
+            <a class="nav-link ms-2 me-2" href="about.html">About Me</a>
+            <a class="nav-link ms-2 me-2" href="projects.html">Projects</a>
+            <a class="nav-link ms-2 me-2" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Main Content with space between navbar and table -->
+    <main class="d-flex justify-content-center align-items-center vh-80">
+      <div class="container">
+        
+        <table class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Professional</th>
+              <th>Social Media</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="logoDiv">
+                <img src="7089163_gmail_google_icon.svg" class="logoImg">: Josephaustin556@gmail.com
+              </td>
+              <td class="logoDiv">
+                <img src="icons8-instagram.svg" class="logoImg">: certainj10
+              </td>   
+            </tr>
+            <tr>
+              <td class="logoDiv">
+                <img src="317750_linkedin_icon.svg" class="logoImg">: www.linkedin.com/in/josephaustincs
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+      <div class="container">
+        <span class="text-body-secondary">Copyright &copy; 2024. All Rights Reserved.</span>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <style>
+      /* Adds spacing between paragraphs */
+      p {
+        margin-bottom: 30px;
+      }
+      /* Adds space between the first paragraph and navbar */
+      .first-paragraph {
+        margin-top: 40px;
+      }
+      /* Ensures the body takes up at least the full viewport height */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      /* Flexbox layout for the body to push footer to the bottom */
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Puts the footer at the bottom of the page */
+      .footer {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        padding: 10px 0;
+        background-color: #f8f9fa;
+      }
+
+      /* Add padding at the bottom to avoid content overlap with the footer */
+      .content {
+        flex-grow: 1; /* Ensures the content area takes up remaining space */
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Joseph Austin</h1>
+          </div>
+        </div>
+      </div>   
+    </header>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <div class="navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-link ms-2 me-2" href="index.html">Home</a>
+            <a class="nav-link ms-2 me-2" href="about.html">About Me</a>
+            <a class="nav-link ms-2 me-2" href="projects.html">Projects</a>
+            <a class="nav-link ms-2 me-2" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Layout with two columns -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Left column: Image and Video -->
+        <div class="col-md-6">
+          <img src="computer-science.jpg" alt="Computer Science" class="img-fluid mb-3">
+
+          <div id="Youtube">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/0sEGYabQv0k?si=6-_cwYnSOoP-iujE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Right column: Body text -->
+        <div class="col-md-6">
+          <p class="first-paragraph text-start">Born and raised in Chicago, I am a student at NLU majoring in Computer Science. If you were to ask me before I started College if I was interested in Computer Science I would say no. I started my first two years doing Social Work because I thought at the time that's what I wanted to pursue. That was until I met peers that turned into friends who pursued Computer Science. Them presenting me and even the classes we had together about why they chose Computer Science and the benefits made me reconsider my major. Then I started to get less interested in the Social Work classes I had to take and realized that I had to switch majors. Thankfully, I switched before my Junior year. I do not regret switching majors at all as the classes I've taken since the switch have been enjoyable and interesting.</p>
+          
+          <p class="text-start">Thankfully, for all the classes I've taken so far for Computer Science, especially the ones for my concentrations, I feel like I've improved on skills that I was lacking. The improved skills for me are teamwork, problem-solving, programming, and more. The projects I've done are a big reason for my improvement and development. You will be able to see on the projects page what I'm talking about.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer py-3 bg-body-tertiary">
+      <div class="container">
+        <span class="text-body-secondary">Copyright &copy; 2024. All Rights Reserved.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
